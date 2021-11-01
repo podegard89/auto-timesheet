@@ -1,6 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const puppeteer = require('puppeteer');
+const secrets = require('./secrets');
+const { Sheet } = require('./sheet');
 
 const app = express();
 
@@ -35,7 +37,7 @@ app.post('/', cors(), async (req, res) => {
             // get rows from Time sheet for date/hour data
             const sheet = new Sheet();
             await sheet.load();
-            // currently only grabs last 5, will need to be updated to 10
+            // grab last 10 rows
             const timeSheetRows = (await sheet.getRows()).slice(1).slice(-10);
 
             // then loop through the data and enter it into banner time sheet

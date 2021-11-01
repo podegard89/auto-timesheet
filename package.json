@@ -5,7 +5,9 @@
   "main": "autoBanner.js",
   "scripts": {
     "start": "node autoBanner.js",
-    "server": "nodemon autoBanner.js"
+    "server": "nodemon autoBanner.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
   "author": "",

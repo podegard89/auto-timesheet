@@ -1,0 +1,22 @@
+{
+  "name": "auto-time-sheet-banner-redo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "autoBanner.js",
+  "scripts": {
+    "start": "node autoBanner.js",
+    "server": "nodemon autoBanner.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^6.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "puppeteer": "^10.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}

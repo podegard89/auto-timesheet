@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import TimeStamp from './models/TimeStamp';
+import ClockInButton from './Components/ClockInButton/ClockInButton';
+import ClockOutButton from './Components/ClockOutButton/ClockOutButton';
 
 function App() {
+  const timeStamp = new TimeStamp();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="clockButtons">
+        <ClockInButton timeStamp={timeStamp} />
+        <ClockOutButton timeStamp={timeStamp} />
+      </div>
     </div>
   );
 }

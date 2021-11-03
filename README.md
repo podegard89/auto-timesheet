@@ -8,9 +8,9 @@ Runs the express server and React client concurrently.
 
 ## Goals:
 
--Restructure Components to have each button be an individual component
--Refactor TimeStamp to be a functional piece of state in the client rather than a vanilla JS class
--Merge autoBanner.js and sheet.js to create a more extensive server that serves sheet data and serves the puppeteer script
+-Restructure Components to have each button be an individual component\
+-Refactor TimeStamp to be a functional piece of state in the client rather than a vanilla JS class\
+-Merge autoBanner.js and sheet.js to create a more extensive server that serves sheet data and serves the puppeteer script\
 -Add more UI components like an on screen timer, display of the time sheet in app\
 -Track gross income based on hours, other use of data etc...\
 -Host project\

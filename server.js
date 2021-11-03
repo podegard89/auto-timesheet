@@ -6,6 +6,10 @@ const { Sheet } = require('./sheet');
 
 const app = express();
 
+app.get('/', cors(), async (req, res) => {
+    
+})
+
 app.post('/', cors(), async (req, res) => {
     try {
         (async () => {

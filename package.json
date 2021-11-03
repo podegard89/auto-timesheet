@@ -2,10 +2,10 @@
   "name": "auto-time-sheet-banner-redo",
   "version": "1.0.0",
   "description": "",
-  "main": "autoBanner.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node autoBanner.js",
-    "server": "nodemon autoBanner.js",
+    "start": "node server.js",
+    "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
